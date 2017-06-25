@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="test-files/test.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+	<title>Game</title>
+</head>
+<body>
+<img id="face" class="face" src="test-files/assets/face.jpg" alt="">
+<audio id="audio" autoplay=""></audio>
+<audio id="pip" autoplay loop></audio>
+	<div class="container">
+		<div id="rules" class="rules-box">
+		<p class="title">Добрый день. <br><br>
+			  Это тест для проверки зрения по новому методу, который был разработан группой врачей-офтальмологов</p>
+				<p class="rules"><span>Инструкция по прохождению теста:</span><br>
+				1. Сядьте на расстояние 40-50см. от экрана. <br>
+				2. Голова должна быть зафиксирована строго по центру монитора. <br>
+				3. Включите звук(оденьте наушники). <br>
+				<ins>В процессе проверки будут издаваться короткие звуки для улучшения реакции.</ins><br>
+				4. После нажатия кнопки «START» блок с текстом начнет увеличиваться. <br>
+				<ins>В блоке 3 строки, размер шрифта которых уменьшается сверху вниз.</ins><br>
+				5. Как только вы смогли четко прочитать последнюю строку – нажмите кнопку «STOP»</p>
+				<p class="end">После окончания теста на экране появятся Ваши результаты.</p>
+				<div id="rules-btn" class="btn-ok">Ok</div>
+		</div>
+		<div class="timer"></div>
+		<div id="text" class="text-box">
+			<p>Не нажимайте "STOP"</p>
+			<p>Не нажимайте "STOP"</p>
+			<p>Сейчас нажмите "STOP"</p>
+		</div>
+		<div class="buttons">
+			<div id="start" class="button start-button">Start</div>
+			<div id="stop" class="button stop-button">Stop</div>
+		</div>
+	</div>
+	<script src="test-files/test.js"></script>
+</body>
+</html>

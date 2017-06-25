@@ -1,0 +1,200 @@
+html, body, div, span, p, img, audio {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+/* _______________________________ */
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	top: 200px;
+}
+
+.text-box {
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+	font: 16px/100px "Roboto Slab", Calibri, sans-serif;
+	text-align: center;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 10px;
+	-webkit-transform: scale(0.1);
+		 -moz-transform: scale(0.1);
+		 	 -o-transform: scale(0.1);
+					transform: scale(0.1);
+	-webkit-transition: transform 120s linear;
+		 -moz-transition: transform 120s linear;
+			 -o-transition: transform 120s linear;
+					transition: transform 120s linear;
+}
+
+.text-box-active {
+	-webkit-transform: scale(2);
+		 -moz-transform: scale(2);
+			 -o-transform: scale(2);
+					transform: scale(2);
+}
+
+.text-box p:first-child {
+	font-size: 40px;
+}
+
+.text-box p:nth-child(2) {
+	font-size: 25px;
+}
+
+.text-box p:last-child {
+	font-size: 10px;
+}
+
+.buttons {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+.button {
+	display: inline-block;
+	width: 200px;
+	font: 24px/80px "Roboto Slab", Arial, sans-serif;
+	border: 1px solid #000;
+	border-radius: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 5px 5px #333;
+	-webkit-transform: skewX(-5deg) translateY(0);
+		 -moz-transform: skewX(-5deg) translateY(0);
+			 -o-transform: skewX(-5deg) translateY(0);
+					transform: skewX(-5deg) translateY(0);
+	-webkit-transition: box-shadow 0.1s linear, transform 0.1s linear;
+		 -moz-transition: box-shadow 0.1s linear, transform 0.1s linear;
+			 -o-transition: box-shadow 0.1s linear, transform 0.1s linear;
+					transition: box-shadow 0.1s linear, transform 0.1s linear;
+}
+.button:active {
+	box-shadow: 2px 2px #333;
+	-webkit-transform: skew(-5deg) translateY(3px);
+		 -moz-transform: skew(-5deg) translateY(3px);
+			 -o-transform: skew(-5deg) translateY(3px);
+					transform: skew(-5deg) translateY(3px);
+}
+
+.start-button {
+	background-color: #bbb;
+	color: #000;
+}
+
+.stop-button {
+	float: right;
+	background-color: #222;
+	color: #fff;
+}
+
+
+.face {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	z-index: 100;
+	display: none;
+}
+
+.face-active {
+	display: block !important;
+}
+
+.rules-box {
+	width: 600px;
+	position: absolute;
+	top: -60px;
+	left: 18.75%;
+	z-index: 1;
+	border: 1px solid #777;
+	border-radius: 3px;
+	box-shadow: 5px 5px 10px #aaa;
+  background: -webkit-linear-gradient(to top right, #eee, #ccc, #aaa);
+  background: -moz-linear-gradient(to top right, #eee, #ccc, #aaa);
+  background: -o-linear-gradient(to top right, #eee, #ccc, #aaa);
+  background: linear-gradient(to top right, #eee, #ccc, #aaa);
+	-webkit-transform: scale(0);
+		 -moz-transform: scale(0);
+			 -o-transform: scale(0);
+					transform: scale(0);
+	-webkit-transition: transform 0.7s ease-out;
+		 -moz-transition: transform 0.7s ease-out;
+			 -o-transition: transform 0.7s ease-out;
+					transition: transform 0.7s ease-out;
+}
+.rules-box-active {
+	-webkit-transform: scale(1);
+		 -moz-transform: scale(1);
+			 -o-transform: scale(1);
+					transform: scale(1);
+}
+
+.rules-box-hidden {
+	-webkit-transform: scale(0);
+		 -moz-transform: scale(0);
+			 -o-transform: scale(0);
+					transform: scale(0);
+}
+
+.title, .end {
+	font: 16px/24px "Roboto Slab", Calibri, sans-serif;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.title {
+	padding-top: 50px;
+}
+
+.end {
+	font-size: 18px;
+	text-decoration: underline;
+	padding-bottom: 25px;
+}
+
+.rules {
+	font: 16px/35px "Roboto Slab", Calibri, sans-serif;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 30px;
+}
+
+.rules span {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.btn-ok {
+	width: 80px;
+	height: 35px;
+	color: #eee;
+	background-color: #555;
+	font: 24px/35px "Roboto Slab", Calibri, sans-serif;
+	border: 1px solid #000;
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	margin: 15px auto;
+}
+
+.btn-ok:hover {
+	color: #111;
+	background-color: #fff;
+}
